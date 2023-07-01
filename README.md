@@ -1,1 +1,2 @@
-Initial file
+## The Deadline Monotonic Scheduling Formula
+$$\lceil$$
