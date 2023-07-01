@@ -37,7 +37,7 @@ public:
     float execution_time;
     float deadline;
     float period;
-    float blocking_time;
+    float blocking_time; //! is the maximum blocking time process i suffers (from lower priority processes)
     // float context_switching;
     uint8 priority; //! higher number means higher priority
 };

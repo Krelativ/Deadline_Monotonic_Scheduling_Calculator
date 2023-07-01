@@ -10,7 +10,8 @@ int main(int argc, char* argv[])
     float response_time = myDmst.CalculateResponseTime(selected_task);
     if (response_time <= system_tasks.at(selected_task).deadline + DELTA)
     {
-        DMST_DEBUG("[INFO] Task %d is schedulable with converged response time : %f \n", selected_task, response_time);
+        DMST_DEBUG("[INFO] Task %d is schedulable with converged response time : %f < Task %d deadline : %f \n",
+                   selected_task, response_time, selected_task, system_tasks.at(selected_task).deadline);
     }
     else
     {

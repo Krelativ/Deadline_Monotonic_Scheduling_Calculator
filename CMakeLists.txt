@@ -5,7 +5,7 @@ project(dmst)
 include_directories(inc)
 
 #Can manually add the sources using the set command as follows:
-set(SOURCES src/dmst.cpp src/main.cpp )
+set(SOURCES src/dmst.cpp src/dmst_cfg.cpp src/main.cpp )
 
 #However, the file(GLOB...) allows for wildcard additions:
 #file(GLOB SOURCES "src/*.cpp")
